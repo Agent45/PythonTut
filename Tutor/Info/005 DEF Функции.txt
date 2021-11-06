@@ -1,0 +1,41 @@
+Функция состоит из заголовка и тела + вызов ф-ии. 
+
+def hello_n (name : str, n : int):	# :str - аннотация типа , предполагаем что будем получать строку
+или
+def hello_n (name : str,
+             n : int):
+    for i in range(n):    
+	print ('Hello', name)
+
+hello_n ('Vasya', 5)
+hello_n ('Petya', 3)
+или
+vasya = 'Vasya',5
+hello_n (*vasya)
+
+-------
+
+def hello_n (name : str, n : int) -> int: # аннотация, ожидается что функция возвращает int
+	return 5
+
+-------
+
+def bar(*args, named_parameter="bar"):
+	for arg in args:
+		print(named_parametr, 'arg =', arg)
+
+
+bar(['the', 'list', 'of', 'strings'])
+bar(1, 2, 3)
+bar("jelly", "fish")
+bar("jelly", "fish", named_parameter='SEPARAROR')
+
+РЕЗУЛЬТАТ
+bar arg = ['the', 'list', 'of', 'strings']
+bar arg = 1
+bar arg = 2
+bar arg = 3
+bar arg = jelly
+bar arg = fish
+SEPARAROR arg = jelly
+SEPARAROR arg = fish

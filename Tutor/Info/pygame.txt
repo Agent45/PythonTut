@@ -1,0 +1,10 @@
+Скачать из раздела Pygame: a library for writing games based on the SDL library. Подходящую библиотеку под версию Питона и разрядность Windows.  Последний раз на Питон 3.9 качал pygame-2.0.3-cp39-cp39-win_amd64.whl
+
+Потом скопировал файл в C:\Users\Asfalt\AppData\Local\Programs\Python\Python39\Scripts
+Win + R
+
+cmd
+
+cd C:\Users\Asfalt\AppData\Local\Programs\Python\Python39\Scripts
+
+pip3 install pygame-2.0.3-cp39-cp39-win_amd64.whl

@@ -1,0 +1,22 @@
+Лист / Список
+Изменяемый, может ссылаться на разнотиповые объекты
+
+A = [1, 2, 3]
+
+A.append(45) # добавка в конец
+
+A = [(1, 10), (2, 20), (3, 30)]  # список кортежей
+
+for i in A:   # for i in range(len(A)):
+    angle, length = A[i]
+    turtle.forward(length)
+
+ИЛИ
+
+for T in A:   
+    angle, length = T
+    turtle.forward(length)
+
+ИЛИ
+
+for angle, length in A:	# если знаем что в A по два элемента
