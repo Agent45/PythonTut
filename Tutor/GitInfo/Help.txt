@@ -1,0 +1,8 @@
+git add *.c
+git add LICENSE
+git commit -m 'Initial project version'
+
+
+
+git remote add origin https://github.com/yourusername/your-repo-name.git
+git push -u origin master
